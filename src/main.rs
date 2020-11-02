@@ -1,8 +1,7 @@
-use dungeon_crawler::entity::*;
+
+use md_dungeon_crawler_inventory::Inventory;
 
 fn main() {
-    let enemy = enemy::get_random_enemy();
-    let hero = hero::Hero::new();
-    enemy.summary();
-    hero.summary();
+    let inv = Inventory::new();
+    println!("Hello, world!");
 }
