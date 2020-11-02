@@ -1,3 +1,8 @@
+use dungeon_crawler::entity::*;
+
 fn main() {
-    println!("Hello, world!");
+    let enemy = enemy::get_random_enemy();
+    let hero = hero::Hero::new();
+    enemy.summary();
+    hero.summary();
 }
